@@ -34,11 +34,6 @@ const connectors: Config[] = [
     connectorId: ConnectorNames.WalletConnect,
   },
   {
-    title: "Binance Chain Wallet",
-    icon: BinanceChain,
-    connectorId: ConnectorNames.BSC,
-  },
-  {
     title: "SafePal Wallet",
     icon: SafePalWallet,
     connectorId: ConnectorNames.Injected,
