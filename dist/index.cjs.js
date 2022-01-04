@@ -2191,12 +2191,14 @@ var StyledLink = styled__default['default'](reactRouterDom.Link)(templateObject_
 var Logo = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
-    var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
-        React__default['default'].createElement(Icon$J, { className: "mobile-icon" }),
+    (React__default['default'].createElement(React__default['default'].Fragment, null,
+        React__default['default'].createElement(Text, { fontSize: "23px" }, " CrossTheAge "),
         React__default['default'].createElement(Logo$2, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
+        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "CrossTheAge" },
+            React__default['default'].createElement(Text, { fontSize: "23px" }, " CrossTheAge "))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "CrossTheAge" },
+            React__default['default'].createElement(Text, { fontSize: "23px" }, " CrossTheAge ")))));
 };
 var Logo$1 = React__default['default'].memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$c;
